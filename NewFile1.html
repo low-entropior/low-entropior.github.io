@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+<meta name="apple-mobile/src-web-app-capable" content="yes">
+<meta name="apple-mobile/src-web-app-status-bar-style" content="black">
+<meta name="author" content="广州职迅信息科技有限公司(https://jobsys.cn)">
+<meta http-equiv="Cache-Control"
+	content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>外出登记二维码</title>
+<link
+	href="http://xsgl.gdut.edu.cn/mobiles/src/app-stu/11845/dist/css/11845stu.4615a9fe.css"
+	rel="preload" as="style">
+<link
+	href="http://xsgl.gdut.edu.cn/mobiles/src/app-stu/11845/dist/css/chunk-vendors.d4c7e326.css"
+	rel="preload" as="style">
+<link
+	href="http://xsgl.gdut.edu.cn/mobiles/src/app-stu/11845/dist/js/11845stu.dbb8c447.js"
+	rel="preload" as="script">
+<link
+	href="http://xsgl.gdut.edu.cn/mobiles/src/app-stu/11845/dist/js/chunk-vendors.0137a7d6.js"
+	rel="preload" as="script">
+<link
+	href="http://xsgl.gdut.edu.cn/mobiles/src/app-stu/11845/dist/css/chunk-vendors.d4c7e326.css"
+	rel="stylesheet">
+<link
+	href="http://xsgl.gdut.edu.cn/mobiles/src/app-stu/11845/dist/css/11845stu.4615a9fe.css"
+	rel="stylesheet">
+</head>
+<body>
+	<div id="app" data-v-app="">
+		<div id="app">
+			<div class="page-container" data-v-fae8cc3a="">
+			
+				<div class="timer" data-v-fae8cc3a="" id="show_time">
+
+<script>
+
+				setInterval("fun(show_time)", 1);
+				function fun(timeID) {
+					var date = new Date(); //创建对象  
+					var y = date.getFullYear(); //获取年份  
+					var m = date.getMonth() + 1; //获取月份  返回0-11  
+					var d = date.getDate(); // 获取日  
+					var h = date.getHours(); //时
+					var minute = date.getMinutes() //分
+					var s = date.getSeconds(); //秒
+					if (m < 10) {
+						m = "0" + m;
+					}
+					if (d < 10) {
+						d = "0" + d;
+					}
+					if (h < 10) {
+						h = "0" + h;
+					}
+
+					if (minute < 10) {
+						minute = "0" + minute;
+					}
+
+					if (s < 10) {
+						s = "0" + s;
+					}
+
+
+
+					document.getElementById(timeID.id).innerHTML = y + "-" + m
+							+ "-" + d + "   " + h + ":" + minute + ":" + s; 
+				}
+
+
+	</script>
+
+
+				</div>
+
+
+
+
+
+				<div class="ex-qrcode center qrcode" width="180" height="180" data-v-544d011e="" data-v-fae8cc3a="">
+					
+						<image src="http://tiebapic.baidu.com/forum/w%3D580/sign=5920ca6943e736d158138c00ab514ffc/7b63170ed9f9d72a817794a8c32a2834349bbb21.jpg" height="120" width="120"/>
+				
+				</div>
+				<div class="van-cell-group__title">外出时间</div>
+				<div class="van-cell-group van-hairline--top-bottom mg-b">
+					<div class="van-cell van-cell--large" data-v-fae8cc3a="">
+						<!---->
+						<div class="van-cell__title">
+							<span>离校时间</span>
+							<!---->
+						</div>
+						<div class="van-cell__value">
+							<span class="text-black" data-v-fae8cc3a="" style="font-weight: bold;" id="demo">
+<script>
+var date = new Date(); //创建对象  
+					var y = date.getFullYear(); //获取年份  
+					var m = date.getMonth() + 1; //获取月份  返回0-11  
+					var d = date.getDate(); // 获取日  
+					var h = date.getHours(); //时
+					var minute = date.getMinutes() //分
+					var s = date.getSeconds(); //秒
+					if (m < 10) {
+						m = "0" + m;
+					}
+					if (d < 10) {
+						d = "0" + d;
+					}
+					if (h < 10) {
+						h = "0" + h;
+					}
+
+					if (minute < 10) {
+						minute = "0" + minute;
+					}
+
+					if (s < 10) {
+						s = "0" + s;
+					}
+
+
+document.getElementById("demo").innerHTML = y + "-" + m + "-" + d + "   " + "08" + ":" + "00";
+</script>
+
+
+
+
+</span>
+						</div>
+						<!---->
+						<!---->
+					</div>
+					<div class="van-cell van-cell--large" data-v-fae8cc3a="">
+						<!---->
+						<div class="van-cell__title">
+							<span>回校时间</span>
+							<!---->
+						</div>
+						<div class="van-cell__value">
+							<span class="text-black" data-v-fae8cc3a=""
+								style="font-weight: bold;"  id="demo1"><script>
+var date = new Date(); //创建对象  
+					var y = date.getFullYear(); //获取年份  
+					var m = date.getMonth() + 1; //获取月份  返回0-11  
+					var d = date.getDate(); // 获取日  
+					var h = date.getHours(); //时
+					var minute = date.getMinutes() //分
+					var s = date.getSeconds(); //秒
+					if (m < 10) {
+						m = "0" + m;
+					}
+					if (d < 10) {
+						d = "0" + d;
+					}
+					if (h < 10) {
+						h = "0" + h;
+					}
+
+					if (minute < 10) {
+						minute = "0" + minute;
+					}
+
+					if (s < 10) {
+						s = "0" + s;
+					}
+
+
+document.getElementById("demo1").innerHTML = y + "-" + m + "-" + d + "   " + "20" + ":" + "00";
+</script></span>
+						</div>
+						<!---->
+						<!---->
+					</div>
+				</div>
+				<div class="van-cell-group__title">学生信息</div>
+				<div class="van-cell-group van-hairline--top-bottom">
+					<div class="van-cell" data-v-fae8cc3a="">
+						<!---->
+						<div class="van-cell__title">
+							<span>姓名</span>
+							<!---->
+						</div>
+						<div class="van-cell__value">
+							<span>陈文俊</span>
+						</div>
+						<!---->
+						<!---->
+					</div>
+					<div class="van-cell" data-v-fae8cc3a="">
+						<!---->
+						<div class="van-cell__title">
+							<span>学号</span>
+							<!---->
+						</div>
+						<div class="van-cell__value">
+							<span>3118003942</span>
+						</div>
+						<!---->
+						<!---->
+					</div>
+					<div class="van-cell" data-v-fae8cc3a="">
+						<!---->
+						<div class="van-cell__title">
+							<span>学院</span>
+							<!---->
+						</div>
+						<div class="van-cell__value">
+							<span>管理学院</span>
+						</div>
+						<!---->
+						<!---->
+					</div>
+					<div class="van-cell" data-v-fae8cc3a="">
+						<!---->
+						<div class="van-cell__title">
+							<span>专业</span>
+							<!---->
+						</div>
+						<div class="van-cell__value">
+							<span>信息管理与信息系统</span>
+						</div>
+						<!---->
+						<!---->
+					</div>
+					<div class="van-cell" data-v-fae8cc3a="">
+						<!---->
+						<div class="van-cell__title">
+							<span>班级</span>
+							<!---->
+						</div>
+						<div class="van-cell__value">
+							<span>信息管理与信息系统18(3)</span>
+						</div>
+						<!---->
+						<!---->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<iframe style="display: none;"></iframe>
+	<div data-v-app=""></div>
+	<!---->
+	<div
+		class="van-popup van-popup--center van-toast van-toast--middle van-toast--success"
+		style="z-index: 2001; display: none;">
+		<i
+			class="van-badge__wrapper van-icon van-icon-success van-toast__icon">
+			<!---->
+			<!---->
+			<!---->
+		</i>
+		<div class="van-toast__text">登录成功</div>
+		<!---->
+	</div>
+</body>
+</html>
